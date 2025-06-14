@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <!--表单是网页中的一个交互区域，用来收集用户的数据-->
+    <form action="https://www.baidu.com/s" target="_blank" method="get">
+        <input type="text" name="wd">
+        <button>search for baidu</button>
+    </form>
+    <hr>
+    <form action="https://search.jd.com/search" target="_self" >
+        <input type="text" name="keyword" >
+        <button>search for jd</button>
+    </form>
+    <hr>
+    <a href="https://search.jd.com/search/search?keyword="手机">搜索</a>
+    <hr>
+    常用控件
+    <form action="https://search.jd.com/search">
+        <fieldset>
+            <legend>主要信息</legend>
+                <label for="zhanghu">账户:</label>
+                <input type="text" name="account" id="zhanghu" maxlength="10">
+                <br>
+                <label>
+                    密码:
+                    <input type="password" name="pwd" value="" maxlength="10">
+                </label>
+        
+                <br>
+                性别:
+                <input type="radio" name="gender" value="male"id="nan">
+                <label for="nan">男</label>
+                <label>
+                    <input type="radio" name="gender" value="female" id="" checked>女
+                </label>
+                <br>
+        
+        </fieldset>
+        
+
+        <fieldset>
+            <legend>附加信息</legend>
+                爱好:
+                <label>
+                    <input type="checkbox" name="hobby" value="smoke">抽烟
+                </label>
+                
+                <label>
+                    <input type="checkbox" name="hobby" value="drink" checked>喝酒
+                </label>
+        
+                <label>
+                    <input type="checkbox" name="hobby" value="perm">烫头
+                </label>
+                
+                <br>
+                <textarea name="other" id="" clos="22" rows="10"></textarea>
+                <br>
+                籍贯:
+                <select name="place">
+                    <option value="冀">河北</option>
+                    <option value="豫">河南</option>
+                    <option value="津" selected>天津</option>
+                    <option value="京">北京</option>
+                    <option value="鲁">山东</option>
+                    <option value="陕">陕西</option>
+                    <option value="晋">山西</option>
+                </select>
+                
+                <br>
+        
+        
+                <button type="submit">确认</button>
+                <input type="submit" value="shangjiao">
+                <button type="reset">重置</button>
+                <input type="reset" value="chongzhi">
+                <button type="button">检测账户是否被注册</button>
+                <input type="button" value="jianceshifouzhuce">
+                <br>
+        
+                <input type="hidden" name="abc" name="abc" value="123">
+        
+                
+        </fieldset>
+        表单禁用,这样就点不了框了
+        账户:
+        <input disabled type="text" name="account" value="lisi" maxlength="10">
+    </form>
+</body>
+</html>
