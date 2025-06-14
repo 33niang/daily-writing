@@ -1,0 +1,16 @@
+
+h1{
+    color: red;
+    font-size: 55px;
+}
+h2{
+    color:goldenrod;
+    font-size: 65px;
+}
+p{
+    color:rgb(135, 135, 153);
+    font-size: 35px;
+}
+img{
+    width:300px;
+}
