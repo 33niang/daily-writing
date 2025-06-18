@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兄弟选择器</title>
+    <style>
+        /* 紧紧相邻的那个p,如果前后都有那后面的会变,若后面相邻的第一个不是p,就不生效 */
+        div+p {
+            color: red;
+        }
+        /* 后面的样式覆盖前面的样式,前面的style就不打注释了 */
+        /* 所有的兄弟选择器,选择所有div的兄弟p,只往下看 */
+        div~p {
+            color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div>三三</div>
+    <p>前段</p>
+    <p>java</p>
+    <p>大数据</p>
+    <p>UI</p>
+</body>
+</html>

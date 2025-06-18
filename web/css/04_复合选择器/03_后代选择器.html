@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        /* ul中的li元素都为red */
+        ul li {
+            color: red;
+        }
+        ol li {
+            color: green;
+        }
+        ul li a {
+            color: orange;
+        }
+        ol li a {
+            color: rgb(54, 146, 146);
+        }
+        p h2 {
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>抽烟</li>
+        <li>喝酒</li>
+        <div>
+            <li>踢球(孙子辈)</li>
+        </div>
+        <li>
+            <a href="#">烫头</a>
+        </li>
+    </ul>
+    <hr>
+    <ol>
+        <li>张三</li>
+        <li>李四</li>
+        <li>
+            <a href="#">王五</a>
+        </li>
+    </ol>
+    <p>
+        <!-- p中不能包含h1-h6,所以style不生效 -->
+        <h2>你好</h2>
+    </p>
+</body>
+</html>
